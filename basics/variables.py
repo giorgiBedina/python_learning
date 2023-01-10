@@ -36,5 +36,20 @@ print(type(x),type(y),type(z))
 # Variables are case sensitive
 n = 6
 N = 9
+
 # n and N are different variables, N will not owerwrite n
 print(n,N)
+
+# Variable can change types
+var_change = 5
+print(var_change,type(var_change))
+var_change = 3.10
+print(var_change,type(var_change))
+var_change = 'name'
+print(var_change,type(var_change))
+
+# You still can change variable type even if it is defined
+var_type = int(5)
+print(var_type,type(var_type))
+var_type = 3.1415
+print(var_type,type(var_type))
