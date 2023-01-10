@@ -32,3 +32,9 @@ z = float(3) # x is going to be float 3.0 , float number
 
 # get the types of variables
 print(type(x),type(y),type(z))
+
+# Variables are case sensitive
+n = 6
+N = 9
+# n and N are different variables, N will not owerwrite n
+print(n,N)
