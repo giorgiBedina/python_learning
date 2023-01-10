@@ -9,6 +9,12 @@ var_float = 4.20
 var_bool = True
 var_string = "This is string"
 
+# Print defined variables
+
+print(var_int,var_float,var_bool,var_string)
+
+# Checking what types are given variables
+
 # isinstance() function checks data type
 
 if isinstance(var_int,int):
