@@ -24,3 +24,11 @@ if isinstance(var_float,int):
     print("var_float is whole number(int)")  
 else:
     print("var_float is not whole number(int)")  
+    
+# Specify types of variables when defining 
+x = int(3) # x is going to be int 3 , whole number
+y = str(3) # y is going to be string 3 , sentence 
+z = float(3) # x is going to be float 3.0 , float number
+
+# get the types of variables
+print(type(x),type(y),type(z))
