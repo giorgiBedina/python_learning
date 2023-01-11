@@ -14,6 +14,7 @@ var_string = "This is string"
 print(var_int,var_float,var_bool,var_string)
 
 # Checking what types are given variables
+print(type(var_int),type(var_float),type(var_bool),type(var_string))
 
 # isinstance() function checks data type
 
@@ -53,3 +54,16 @@ var_type = int(5)
 print(var_type,type(var_type))
 var_type = 3.1415
 print(var_type,type(var_type))
+
+# Assign multiple values
+# You can assign same value to multiple variables 
+index = count = number  = 5
+print(index,count,number)
+# Or you can assign multiple value to multiple variables 
+index , count, number  = 2 , 5 , 3
+print(index,count,number)
+
+# Unpack the list and extract values into variables
+cars = ["civic", "supra", "mustang"]
+H, T, F = cars
+print(H,T,F) 
