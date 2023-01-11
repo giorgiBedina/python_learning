@@ -45,3 +45,11 @@ print(n,type(n))
 # convert from int to complex
 c = complex(x)
 print(c,type(c)) 
+
+# random numbers
+# first we need to import rundom number library to the code
+import random
+
+rand_number1 = random.randint(1,100) # random number from 1 to 100 range
+
+print(rand_number1)
