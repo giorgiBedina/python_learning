@@ -33,3 +33,9 @@ str3 = "kvaradona"
 for x in str3: # loop string with for cicle 
     print(x,end='\t')   # and print each character
 print()    
+
+
+# String lenght
+# string as ant array has size, lenght
+str4 = "Is math related to science?"
+print(len(str4))
