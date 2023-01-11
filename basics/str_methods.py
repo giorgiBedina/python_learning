@@ -1,46 +1,64 @@
-#Method	Description
-a = str()
-a.capitalize()	#Converts the first character to upper case
-a.casefold()	#Converts string into lower case
-a.center()	#Returns a centered string
-a.count()	#Returns the number of times a specified value occurs in a string
-a.encode()	#Returns an encoded version of the string
-a.endswith()	#Returns true if the string ends with the specified value
-a.expandtabs()	#Sets the tab size of the string
-a.find()	#Searches the string for a specified value and returns the position of where it was found
-a.format()	#Formats specified values in a string
-a.format_map()	#Formats specified values in a string
-a.index()	#Searches the string for a specified value and returns the position of where it was found
-a.isalnum()	#Returns True if all characters in the string are alphanumeric
-a.isalpha()	#Returns True if all characters in the string are in the alphabet
-a.isdecimal()	#Returns True if all characters in the string are decimals
-a.isdigit()	#Returns True if all characters in the string are digits
-a.isidentifier()	#Returns True if the string is an identifier
-a.islower()	#Returns True if all characters in the string are lower case
-a.isnumeric()	#Returns True if all characters in the string are numeric
-a.isprintable()	#Returns True if all characters in the string are printable
-a.isspace()	#Returns True if all characters in the string are whitespaces
-a.istitle()	#Returns True if the string follows the rgules of a title
-a.isupper()	#Returns True if all characters in the string are upper case
-a.join()	#Joins the elements of an iterable to the end of the string
-a.ljust()	#Returns a left justified version of the string
-a.lower()	#Converts a string into lower case
-a.lstrip()	#Returns a left trim version of the string
-a.maketrans()	#Returns a translation table to be used in translations
-a.partition()	#Returns a tuple where the string is parted into three parts
-a.replace()	#Returns a string where a specified value is replaced with a specified value
-a.rfind()	#Searches the string for a specified value and returns the last position of where it was found
-a.rindex()	#Searches the string for a specified value and returns the last position of where it was found
-a.rjust()	#Returns a right justified version of the string
-a.rpartition()	#Returns a tuple where the string is parted into three parts
-a.rsplit()	#Splits the string at the specified separator, and returns a list
-a.rstrip()	#Returns a right trim version of the string
-a.split()	#Splits the string at the specified separator, and returns a list
-a.splitlines()	#Splits the string at line breaks and returns a list
-a.startswith()	#Returns true if the string starts with the specified value
-a.strip()	#Returns a trimmed version of the string
-a.swapcase()	#Swaps cases, lower case becomes upper case and vice versa
-a.title()	#Converts the first character of each word to upper case
-a.translate()	#Returns a translated string
-a.upper()	#Converts a string into upper case
-a.zfill()	#Fills the string with a specified number of 0 values at the beginning
+# You can modify strings by Python built-in methods  
+a = "good morning vietnam !!!"
+print(a.upper()) # this method will return string in upper case 
+
+b = "HOW ARE YOU ?" 
+print(b.lower()) # this method will return string in lower case 
+
+# "replace()" method will chane string with another string,  
+print(a.replace("vietnam","georgia")) # changed vietnam with georgia  
+
+# "split()" method splits string into substrings if it finds instances of separator
+# and returns list , where where the text between the specified separator becomes the list items
+
+c = "family guy"
+d = "peter,brian,stewie"
+print(c.split(" ")) # separator is space - " "
+print(d.split(",")) # separator is colon - ","
+
+# Other string methods
+
+# a.capitalize() Converts the first character to upper case
+# a.casefold()	 Converts string into lower case
+# a.center()	 Returns a centered string
+# a.count()	     Returns the number of times a specified value occurs in a string
+# a.encode()     Returns an encoded version of the string
+# a.endswith()	 Returns true if the string ends with the specified value
+# a.expandtabs() Sets the tab size of the string
+# a.find()	     Searches the string for a specified value and returns the position of where it was found
+# a.format()	 Formats specified values in a string
+# a.format_map() Formats specified values in a string
+# a.index()	     Searches the string for a specified value and returns the position of where it was found
+# a.isalnum()	 Returns True if all characters in the string are alphanumeric
+# a.isalpha()	 Returns True if all characters in the string are in the alphabet
+# a.isdecimal()	 Returns True if all characters in the string are decimals
+# a.isdigit()	 Returns True if all characters in the string are digits
+# a.isidentifier()	 Returns True if the string is an identifier
+# a.islower()    Returns True if all characters in the string are lower case
+# a.isnumeric()	 Returns True if all characters in the string are numeric
+# a.isprintable()	 Returns True if all characters in the string are printable
+# a.isspace()	 Returns True if all characters in the string are whitespaces
+# a.istitle()	 Returns True if the string follows the rgules of a title
+# a.isupper()	 Returns True if all characters in the string are upper case
+# a.join()	     Joins the elements of an iterable to the end of the string
+# a.ljust()	     Returns a left justified version of the string
+# a.lower()	     Converts a string into lower case
+# a.lstrip()	 Returns a left trim version of the string
+# a.maketrans()	 Returns a translation table to be used in translations
+# a.partition()	 Returns a tuple where the string is parted into three parts
+# a.replace()	 Returns a string where a specified value is replaced with a specified value
+# a.rfind()	     Searches the string for a specified value and returns the last position of where it was found
+# a.rindex()	 Searches the string for a specified value and returns the last position of where it was found
+# a.rjust()	     Returns a right justified version of the string
+# a.rpartition() Returns a tuple where the string is parted into three parts
+# a.rsplit()	 Splits the string at the specified separator, and returns a list
+# a.rstrip()	 Returns a right trim version of the string
+# a.split()	     Splits the string at the specified separator, and returns a list
+# a.splitlines() Splits the string at line breaks and returns a list
+# a.startswith() Returns true if the string starts with the specified value
+# a.strip()	     Returns a trimmed version of the string
+# a.swapcase()	 Swaps cases, lower case becomes upper case and vice versa
+# a.title()	     Converts the first character of each word to upper case
+# a.translate()	 Returns a translated string
+# a.upper()	     Converts a string into upper case
+# a.zfill()	     Fills the string with a specified number of 0 values at the beginning
