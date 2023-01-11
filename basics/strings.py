@@ -26,6 +26,15 @@ print(m_string)
 str2 = str("Earth is flat")
 print(str2[0]) # this will print first character of the string
 
+# To check if one string contains the second string, we can use "in"
+txt = "subscibe to giorgi_bedina"
+print("giorgi_bedina" in txt) #this will print true/false if depending on if piewdiepie is in the txt
+# or you can use if statement 
+# you check check if sting not contains word/character with "not in" 
+if "like and subscribe" not in txt: #this will print true/false if depending on if given sentence is in the txt 
+    print("like and subscribe to giorgi_bedina")
+
+
 # loop in string
 # because strings are arrays of chararters , you can loop in the string 
 # and access each character seperatly
