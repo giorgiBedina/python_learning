@@ -67,3 +67,14 @@ print(index,count,number)
 cars = ["civic", "supra", "mustang"]
 H, T, F = cars
 print(H,T,F) 
+
+# Print variables 
+# You can print variables while doing operation 
+score_A , score_B = 50, 60
+print(score_A + score_B) # Printed summery of A and B scores 
+# You can even print different variable types together
+score_C = 95
+score_value = None
+if score_C > 90 :
+    score_value = "A"
+print(score_C,score_value)    
