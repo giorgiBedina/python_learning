@@ -28,3 +28,20 @@ y = -2j
 z = 4 + 1j
 
 print(x,y,z)
+
+# You can convert from one type to another 
+m = 16
+n = 20.23
+k = 11j
+
+# convert from int to float
+a = float(m)
+print(a,type(a))
+
+# convert from float to int
+b = int(n)
+print(n,type(n))
+
+# convert from int to complex
+c = complex(x)
+print(c,type(c)) 
