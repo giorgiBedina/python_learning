@@ -48,3 +48,21 @@ print()
 # string as ant array has size, lenght
 str4 = "Is math related to science?"
 print(len(str4))
+
+# String modifications
+# cut/slice strings
+# you can return a range of characters by using the slice syntax.
+string1 = "we are going to slice this string"
+
+# specify the start index and the end index, separated by a colon, to return a part of the string.
+print(string1[16:21]) # Get the characters from position 16 to position 21(not included)
+
+# slice from the start
+print(string1[:6]) # this is going to print characters from start index 0 to index 6(not included)
+
+# slice to the end
+print(string1[7:]) # this is going to print characters from start index 7 to the end
+
+# you can use negative indexes to start the slice from the end of the string
+string2 = "sushi<3!"
+print(string2[-4:-1])
