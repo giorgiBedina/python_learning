@@ -66,3 +66,32 @@ print(string1[7:]) # this is going to print characters from start index 7 to the
 # you can use negative indexes to start the slice from the end of the string
 string2 = "sushi<3!"
 print(string2[-4:-1])
+
+# combine strings with +
+a, b = "this is", "amazing"
+c = a + " " + b
+print(c)
+
+# format strings 
+# we can not combine string and numbers together
+horspower = 160
+# enigne_spec = "b16a2 hp = " + horspower  - this is not possible
+# to solve the issue , we can use "format()" method
+enigne_spec = "b16a2 hp = {} hp"
+print(enigne_spec.format(horspower))
+
+# with "format()" method, you can use multiple numbers of arguments, 
+# and place into their respective placeholders
+day = 16
+month = 11
+year = 1999
+birthday = "I was born in {}/{}/{}"
+print(birthday.format(day,month,year))
+
+# you can use index numbers {0} to be sure arguments are placed in correct placeholders
+e_hp = 100
+cost = 10
+hp = 1000
+stmt = """F1 car makes more than {2} hp, from which {0} hp is made by hybrid electric engine. 
+This is why F1 engine costs around {1} million dollars."""
+print(stmt.format(e_hp,cost,hp))                
