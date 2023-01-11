@@ -21,3 +21,10 @@ numb1 = 3.565e10
 numb2 = -45.1e5
 
 print(numb1,numb2)
+
+# complex numbers, the symbol j is used to denote the imaginary unit
+x = 5j
+y = -2j
+z = 4 + 1j
+
+print(x,y,z)
