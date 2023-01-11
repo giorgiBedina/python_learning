@@ -1,5 +1,4 @@
 #Method	Description
-import string
 a = str()
 a.capitalize()	#Converts the first character to upper case
 a.casefold()	#Converts string into lower case
