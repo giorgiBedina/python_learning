@@ -1,3 +1,4 @@
+# SORT list
 # Sort List Alphanumerically
 # Alphabetically
 football_clubs = ["Manchester City", "PSG", "Real Madrid", "Chelsea", "Barcelona", "Arsenal", "Napoli"]
@@ -36,3 +37,18 @@ print(pets)
 # The reverse() method reverses the current sorting order of the elements
 pets.reverse()
 print(pets)
+      
+# COPY list    
+list1 = ["pizza","apple","cheese","fries"]
+list2 = None
+
+# You cannot copy a list simply by typing list2 = list1, because: list2 will only be a reference to list1,
+# and changes made in list1 will automatically also be made in list2
+# Make a copy of a list with the copy() method
+list2 = list1.copy()
+print(list2)
+
+#Another way to make a copy is to use the built-in method list()
+list2.clear()
+list2 = list(list1)
+print(list2)
