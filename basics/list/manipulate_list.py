@@ -17,6 +17,7 @@ for i in range(len(list_linux)): # Use the range() and len() functions to create
 # loop your way through the list items by referring to their indexes    
 car_gears = ["reverse gear","first gear","second gear","forth gear","fifth gear"]
 i = 0
-while 1 < len(car_gears):
+while i < len(car_gears):
     print(car_gears[i],end='\t')
-    i += 1 # Remember to increase the index by 1 after each iteration
+    i = i + 1 # Remember to increase the index by 1 after each iteration
+print()    
