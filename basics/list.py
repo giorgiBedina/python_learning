@@ -24,3 +24,31 @@ mylist = [1,"abc",False,2,"def",True]
 
 # From Python's perspective, lists are defined as objects with the data type 'list'
 print(type(mylist))
+
+# ACCESS ITEMS
+# List items are indexed and you can access them by referring to the index number
+this_list = [45,56,89,41]
+print(this_list[0]) # this will print the first item of the list
+
+# Negative indexes
+# Negative indexing means start from the end
+print(this_list[-1]) # this will print the last item of the list
+
+# You can specify a range of indexes by specifying where to start and where to end the range.
+# When specifying a range, the return value will be a new list with the specified items
+list_car = ["toyota","nissan","mazda","honda","mitsubishi"] 
+print(list_car[1:3]) # The search will start at index 1 (included) and end at index 3 (not included).
+
+# By leaving out the start value, the range will start at the first item
+fruit_list = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(fruit_list[:4]) # this will print from the start to index 4 (not included)
+
+# By leaving out the end value, the range will go on to the end of the list
+print(fruit_list[2:]) # this will print from index 2(included) to the end
+
+# Specify negative indexes if you want to start the search from the end of the list:
+print(fruit_list[-3:-1]) # this will print from 3rd item from the end to the end (last item not included)
+
+# check if item exists in the list
+if "banana" in fruit_list:
+    print(True)
