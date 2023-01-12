@@ -43,6 +43,37 @@ print(new_list)
 new_list.clear() # clears new_list, it will have no items 
 
 # With list comprehension you can do all that with only one line of code
-new_list = [x for x in old_list if "a" in x]
+new_list = [x for x in old_list if x%2 == 0]
 print(new_list)
 # The Syntax : new_list = [expression for item in iterable if condition == True]
+# The condition is optional and can be excluded
+new_list.clear() # clear new_list
+new_list = [x for x in old_list] # this will copy to old_list to new list
+# The iterable can be any iterable object, like a list, tuple, set etc
+# You can use the range() function to create an iterable
+new_list.clear()
+new_list = [x for x in range(7)] # this will insert numbers from 0 to 7(not included)
+print(new_list)
+# Same example, but with a condition
+new_list.clear()
+new_list = [x for x in range(100) if x%5 == 0] # this will inserts numbers which can be devided by 5
+print(new_list)
+
+# The expression is the current item in the iteration, but it is also the outcome, 
+# which you can manipulate before it ends up like a list item in the new list
+new_list.clear()
+char_list = ['a','b','c','d']
+new_list = [x.upper() for x in char_list] # will copy upper chars from old to new list
+print(new_list)
+
+# You can set the outcome to whatever you like
+windows_list = ["windows xp","windows 7","windows 8","windows 10"]
+windows_error = ["error" for x in windows_list] # Set all values in the new list to 'error'
+print(windows_error)
+
+# The expression can also contain conditions, not like a filter, but as a way to manipulate the outcome
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+new_fruits = [x if x != "banana" else "orange" for x in fruits] # this will change banana with orange 
+# x if x != "banana" else "orange" - expression 
+# for x in fruits for item in iterable 
+print(new_fruits)
