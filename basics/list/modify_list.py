@@ -42,3 +42,32 @@ euro_cars.extend(german_cars) # This will add items from german_cars to euro_car
 print(euro_cars)
 euro_cars.extend(italian_cars) # This will add items from italian_cars to euro_cars
 print(euro_cars)
+
+# Remove item from the list
+# The remove() method removes the specified item
+engines = ["2jzGTE","k20a2","LS1","RB26DETT", "13B"]
+print(engines)
+engines.remove("LS1")
+print(engines)
+
+# The pop() method removes the specified index
+engines.pop(2) # This will remove the item with the index 2
+print(engines)
+
+# If you do not specify the index, the pop() method removes the last item
+engines.pop() # This will remove the last item from the list
+print(engines)
+
+# The del keyword also removes the specified index:
+engines = ["2jzGTE","k20a2","LS1","RB26DETT", "13B"]
+del engines[0]
+print(engines)
+
+# The del keyword can also delete the list completely
+del engines # This will remove list entirely, engines list won't be defined any longer
+
+# The clear() method empties the list.
+# The list still remains, but it has no content.
+engines = ["2jzGTE","k20a2","LS1","RB26DETT", "13B"]
+engines.clear() # This will remove items , but the list itself still exists
+print(engines) # This will print empty list
