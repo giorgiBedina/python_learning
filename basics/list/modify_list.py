@@ -22,3 +22,23 @@ processors[0:2] = ["athlon"] # This will change list item with index 0 remove it
 print(processors) # with index 1(included),2(not included) and move rest to the left
 
 
+# ADD item to the list
+# To insert a new list item, without replacing any of the existing values, we can use the insert() method.
+# The insert() method inserts an item at the specified index
+GPUs = ["3060","3060 ti","3070 ti","3080"]
+GPUs.insert(2,"3070") # This will insert new item to index 2 and move rest to right
+print(GPUs)
+
+# To add an item to the end of the list, use the append() method
+GPUs.append("3080 ti") # This will add item to the last index
+print(GPUs)
+
+# To append elements from another list to the current list, use the extend() method
+
+german_cars = ["bmw","mercedes-benz","vw","audi","porsche"]
+italian_cars = ["ferrai","lamborgini","lancia","alfa romeo"]
+euro_cars = ["volvo","saab","mini cooper"]
+euro_cars.extend(german_cars) # This will add items from german_cars to euro_cars
+print(euro_cars)
+euro_cars.extend(italian_cars) # This will add items from italian_cars to euro_cars
+print(euro_cars)
