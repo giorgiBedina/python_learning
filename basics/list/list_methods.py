@@ -52,3 +52,35 @@ print(list2)
 list2.clear()
 list2 = list(list1)
 print(list2)
+
+# JOIN lists
+# There are several ways to join, or concatenate, two or more lists
+# One of the easiest ways are by using the + operator.
+join_list1 = ["one","two","three"]
+join_list2 = [1,2,3]
+join_list3 = join_list1 + join_list2
+print(join_list3)
+
+# Another way to join two lists is by appending all the items from list2 into list1, one by one
+for x in join_list2:
+    join_list1.append(x)
+print(join_list1)
+
+# Or you can use the extend() method, which purpose is to add elements from one list to another list
+join_list1 = ["one","two","three"]
+join_list2 = [1,2,3]
+join_list1.extend(join_list2)
+print(join_list1)   
+
+# LIST METHODS 
+# append()	Adds an element at the end of the list
+# clear()	Removes all the elements from the list
+# copy()	Returns a copy of the list
+# count()	Returns the number of elements with the specified value
+# extend()	Add the elements of a list (or any iterable), to the end of the current list
+# index()	Returns the index of the first element with the specified value
+# insert()	Adds an element at the specified position
+# pop()	    Removes the element at the specified position
+# remove()	Removes the item with the specified value
+# reverse()	Reverses the order of the list
+# sort()	Sorts the list
