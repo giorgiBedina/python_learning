@@ -35,3 +35,29 @@ boolean_tuple = (True,False,False)
 # A tuple can contain different data types
 mix_tuple = ("civic",1.6,160,True)
 print(type(mix_tuple))
+
+# ACCESS items
+# You can access tuple items by referring to the index number, inside square brackets
+print(mix_tuple[1])
+
+# Negative indexing means start from the end
+fruit_tuple = ("apple","melon","pear","banana")
+print(fruit_tuple[-2])
+
+# You can specify a range of indexes by specifying where to start and where to end the range.
+# When specifying a range, the return value will be a new tuple with the specified items
+print(fruit_tuple[1:3]) # from index 1(included) to index 3(not included)
+
+# By leaving out the start value, the range will start at the first item
+number_tuple = (1,2,2,3,4,5,3,6)
+print(number_tuple[:5]) # from start to index 5(not included)
+
+# By leaving out the end value, the range will go on to the end of the list
+print(number_tuple[2:]) # will print from index 2(included) to the end
+
+# Specify negative indexes if you want to start the search from the end of the tuple
+print(number_tuple[-5:-2])
+
+# Print each item with loop
+[print(x,end=" ") for x in number_tuple]
+print()
