@@ -83,3 +83,23 @@ fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
 print(green)
 print(tropic)
 print(red)
+
+# You can loop through the tuple items by using a for loop
+car_tuple = ("Civic Type R","AMG GTR","GTR Nissmo","GR Supara","M3")
+for car in car_tuple:
+    print(car, end=" ")
+print()
+
+# You can also loop through the tuple items by referring to their index number
+# Use the range() and len() functions to create a suitable iterable
+for i in range(len(car_tuple)):
+    print(car_tuple[i])
+    
+# You can loop through the tuple items by using a while loop
+# Use the len() function to determine the length of the tuple,
+# then start at 0 and loop your way through the tuple items by referring to their indexes.    
+this_tuple = ("pewdiepie","mr beast","ksi","t-series")
+i = int(0)
+while i < len(this_tuple):
+    print(this_tuple[i])
+    i = i + 1 # Remember to increase the index by 1 after each iteration
