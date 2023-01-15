@@ -103,3 +103,14 @@ i = int(0)
 while i < len(this_tuple):
     print(this_tuple[i])
     i = i + 1 # Remember to increase the index by 1 after each iteration
+
+# Join Two Tuples
+# To join two or more tuples you can use the + operator
+german_cars = ("bmw","mercedes","porsche","VW","audi")
+JDM_cars = ("honda","toyota","subaru","mitsubishi")
+cars = german_cars + JDM_cars
+print(cars)   
+
+# Multiply Tuples
+# If you want to multiply the content of a tuple a given number of times, you can use the * operator
+print(JDM_cars * 2)
